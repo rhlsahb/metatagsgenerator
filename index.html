@@ -253,7 +253,7 @@ function closeNav() {
 <br><br>
 <textarea class="form-control" name="story" id="exampleFormControlTextarea1" rows="8" wrap="wrap"></textarea>
    
-
+<button>Copy to Clipboard</button>
           </tbody></table>
 		  
 <br><br><br>
@@ -264,8 +264,12 @@ function closeNav() {
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-​<p>Click on the button to copy the text from the text field. Try to paste the text (e.g. ctrl+v) afterwards in a different window, to see the effect.</p>
-
+<script>
+document.querySelector("button").onclick = function(){
+  document.querySelector("textarea").select();
+  document.execCommand('copy');
+};
+</script>
 
 
 
