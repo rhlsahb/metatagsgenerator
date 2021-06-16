@@ -251,11 +251,11 @@ function closeNav() {
    
    <input class="btn btn-secondary btn-sm " type="reset" value="Clear All"/>
 <br><br>
-<input type="text" value="story" class="form-control" name="story" id="exampleFormControlTextarea1 myInput" rows="8" wrap="wrap"></input>
+<textarea class="form-control" name="story" id="exampleFormControlTextarea1" rows="8" wrap="wrap"></textarea>
    
 
           </tbody></table>
-		  <button onclick="myFunction()">Copy text</button>
+		  
 <br><br><br>
       
         </form>
@@ -268,14 +268,6 @@ function closeNav() {
 
 
 
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
-</script>
+
   </body>
     </html>
