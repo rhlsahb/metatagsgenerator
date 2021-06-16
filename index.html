@@ -83,12 +83,182 @@
     </div>
 </section>
 <br/>
+    <div class="container">
+      
+          <form method="post" name="form1">
+      <script language="JavaScript">
+        function create(form) {
+  if (confirm("Blog Meta Tags says ok for confirm")) {
+    form.story.value = "<!-- This meta tags is generated with https://www.metatagsgenerator.com --> \n" ;
+    if (form.input1.value != "") {
+      form.story.value +="<meta name=\"name\" content=\"" +
+      form.input1.value + "\"/>\n";
+    }
+    if (form.input2.value != "") {
+      form.story.value +="<meta name=\"author\" content=\"" +
+      form.input2.value + "\"/>\n";
+    }
+    if (form.input4.value != "") {
+      form.story.value +="<meta name=\"description\" content=\"" +
+      form.input4.value + "\"/>\n";
+    }
+    if (form.input5.value != "") {
+      form.story.value +="<meta name=\"keywords\" content=\"" +
+      form.input5.value + "\"/>\n";
+    }
+    if (form.input14.value != "") {
+      form.story.value +="<meta name=\"distribution\" content=\"" +
+      form.input14.options[form.input14.selectedIndex].value + "\"/>\n";
+    }
+    if (form.input15.value != "") {
+      form.story.value +="<meta name=\"robots\" content=\"" +
+      form.input15.options[form.input15.selectedIndex].value + "\"/>\n\n";
+    }
+    
+   if (form.input1.value != "") {
+      form.story.value +="<!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->\n\n";
+    }
+if (form.input1.value != "") {
+      form.story.value +="<meta property=\"og:site_name\" content=\"" +
+      form.input1.value + "\"/>\n";
+   }
+if (form.input10.value != "") {
+      form.story.value +="<meta property=\"og:site\" content=\"" +
+      form.input10.value + "\"/>\n";
+   }
+if (form.input1.value != "") {
+      form.story.value +="<meta property=\"og:title\" content=\"" +
+      form.input1.value + "\"/>\n";
+  }
+if (form.input4.value != "") {
+      form.story.value +="<meta property=\"og:description\" content=\"" +
+      form.input4.value + "\"/>\n";
+   }
+if (form.input11.value != "") {
+      form.story.value +="<meta property=\"og:image\" content=\"" +
+      form.input11.value + "\"/>\n";
+   }
+if (form.input1.value != "") {
+      form.story.value +="<meta expr:content=\"data:blog.url.canonical\" property=\"og:url" + "\"/>\n";
+   }
+if (form.input11.value != "") {
+      form.story.value +="<meta property=\"og:type\" content=\"artical"+ "\"/>\n";
+    }
+  }
+         
+}
+        
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+       
+ </script>
+ 
+<div class="form-group">
+
+    <label for="inputdefault" syle="font-size:18px"><b>Title:</b>  <small style="font-size:12px">(maximum length 60)</small></label>
+
+    <input class="form-control" id="inputdefault" name="input1" type="text"placeholder="Enter Title"/>
+
+  </div>
+      <div class="form-group">
+
+    <label for="inputdefault" style="font-size:18px"><b>Author:</b> <small style="font-size:12px">(Optional)</small></label>
+   
+ <input class="form-control" id="inputdefault" name="input2" type="text"placeholder="Enter Author Name"/>
+
+
+  </div>
+      
+          <div class="form-group">
+
+    <label for="inputdefault" style="font-size:18px" ><b>Description: </b><small style="font-size:12px">(Maximum length 150)</small> </label>
+
+    <input class="form-control" id="inputdefault" name="input4" type="text"placeholder="Enter Blogger Description"/>
+
+  </div>
+      <div class="form-group">
+
+    <label for="inputdefault" style="font-size:18px" ><b>Keywords:</b><small style="font-size:12px"> (e.g.Keyword, keyword 2.)</small></label>
+
+    <input class="form-control" id="inputdefault" name="input5" type="text"placeholder=" Enter Blogger Keywords"/>
+
+  </div>
+            <div class="form-group">
+
+    <label for="inputdefault" style="font-size:18px" ><b>Site URL:</b><small style="font-size:12px"> (For Social Seo)</small></label>
+
+    <input class="form-control" id="inputdefault" name="input10" type="text"placeholder=" Enter Blogger URL"/>
+
+  </div>
+      <div class="form-group">
+
+    <label for="inputdefault" style="font-size:18px" ><b>OG Image:</b><small style="font-size:12px"> (For Social Seo)</small></label>
+
+    <input class="form-control" id="inputdefault" name="input11" type="text"placeholder=" Enter Blogger image"/>
+
+  </div>
+            <div class="form-group">
+
+    <label for="exampleFormControlSelect1" style="font-size:18px" ><b>Distribution:</b></label>
+
+    <select class="form-control" id="exampleFormControlSelect1" name="input14">
+<option selected>Select..</option>
+  <option value="Global">Global</option>
+  <option value="Local">Local</option>
+  <option value="IU">Internal Use</option>
+
+
+    </select>
+
+  </div>
+       <div class="form-group">
+    <label for="exampleFormControlSelect1" style="font-size:18px"><b>Robots:</b></label>
+    <select class="form-control" id="exampleFormControlSelect1" name="input15"><option selected>Select..</option>
+  <option value="All">All</option>
+  <option value="None">None</option>
+  <option value="No Index">No Index</option>
+  <option value="Follow">Follow</option>
+  <option value="No Follow">No Follow</option>
+    </select>
+  </div>
+            
+ <table> <tbody>   
+<input style="margin:8px;"class="btn btn-success btn-sm" onclick="create(this.form)" type="button" value="Create META tags"/>
+   
+   <input class="btn btn-secondary btn-sm " type="reset" value="Clear All"/>
+<br><br>
+    <div>Instructions: Simply copy the following lines of code and insert them Between the &lt;head&gt; and &lt;/head&gt; tags in your HTML Document.</div>
+<textarea class="form-control response" readonly rows="10" name="story" id="exampleFormControlTextarea1" wrap="wrap"></textarea>
+   <br/>
+<k type="button" class="btn btn-primary pull-left js-clipboard-tool-result" data-clipboard-target=".response" value="">Copy to Clipboard</k>
+
+          </tbody></table>
+<br><br><br>
+      
+        </form>
+    </div>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>
+document.querySelector("k").onclick = function(){
+  document.querySelector("textarea").select();
+  document.execCommand('copy');
+ alert("Your Generated Meta Tags Copied Succesfully!");
+};
+</script>
 <section class="content8 cid-sAw3evEdfs" id="content8-8">
     
     <div class="container">
         <div class="row justify-content-center">
             <div class="counter-container col-md-12 col-lg-11">
-                <h4 class="mbr-section-title mbr-fonts-style mb-4 display-7">What is Meta Tag?<br>Every web page has meta tags, but they’re only visible in the HTML code. The &lt;meta&gt; tag defines metadata about an HTML document. Meta tags are snippets of text that describe a page's content; the meta tags don't appear on the page itself.&nbsp;</h4>
+                <h4 class="mbr-section-title mbr-fonts-style mb-4 display-7"><strong>What is Meta Tag?</strong><br>Every web page has meta tags, but they’re only visible in the HTML code. The &lt;meta&gt; tag defines metadata about an HTML document. Meta tags are snippets of text that describe a page's content; the meta tags don't appear on the page itself.&nbsp;</h4>
                 <div class="mbr-text mbr-fonts-style display-7">
                     <ul>
                         </ul><div><br></div><ul><li><strong>What is Meta Title:&nbsp;</strong><span style="font-size: 1.2rem;">The Meta Title refers to the title of an HTML document that is displayed both in Search Engine result snippets, and the page's tab in browsers.&nbsp;</span><br></li><li><strong>What is Meta Description: </strong>The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often displays the meta description in search results, which can influence click-through rates.&nbsp;<strong>&nbsp;</strong></li><li><strong>What is Meta Keywords: </strong>Meta's keywords are types of meta tags in the HTML source code of a web page. They describe the content of a website shortly and concisely, and are therefore, important indicators of a website's content to search engines. The keywords are generally written in lower case, and separated with a comma.&nbsp;<strong>&nbsp;</strong></li><li><strong>What is Meta Distribution:</strong>&nbsp;Thee “distribution” value is supposedly used to control who can access the document, typically set to “global.” It's inherently implied that if the page is open (not password-protected, like on an intranet) that it's meant for the world. Go with it, and leave the tag of the page.&nbsp;&nbsp;</li><li><strong>What is Meta Robots: </strong><span style="font-size: 1.2rem;">Sometimess you don't want search engine robots to crawl and index your blog so, you can simply tell the robots that don't crawl the data of the blog using the No follow tag or No index tag. By default, blogger tags all blogs as ALL If you don't want to be bothered with this tag then simply leave the blank empty in the tool below.</span><br></li><li><strong>What is Meta Author: </strong>This tag is used to name the author of the page. It's just not necessary on the page.&nbsp;</li></ul><ul>
