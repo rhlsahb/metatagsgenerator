@@ -123,49 +123,171 @@ body{font-family: Inter;}blockquote{border-color: #ffdc00;}div[submit-success] >
 
     <div class="container">
         <h2 class="mbr-section-title align-center mbr-fonts-style mbr-bold display-2">
-            Contact Us
+            Meta Tags Generator For Blogger
         </h2>
         
 
         <div class="mbr-row mbr-jc-c main-row mbr-pt-4">
+           <div class="container">
+      
+          <form method="post" name="form1">
+      <script language="JavaScript">
+        function create(form) {
+  if (confirm("Blog Meta Tags says ok for confirm")) {
+    form.story.value = "<!-- This meta tags is generated with https://www.metatagsgenerator.com --> \n" +
+   "Instructions: Simply copy the following lines of code and insert them " +
+      "Between the <head> and </head> tags in your HTML Document.\n\n";
+    if (form.input1.value != "") {
+      form.story.value +="<meta name=\"name\" content=\"" +
+      form.input1.value + "\"/>\n";
+    }
+    if (form.input2.value != "") {
+      form.story.value +="<meta name=\"author\" content=\"" +
+      form.input2.value + "\"/>\n";
+    }
+    if (form.input4.value != "") {
+      form.story.value +="<meta name=\"description\" content=\"" +
+      form.input4.value + "\"/>\n";
+    }
+    if (form.input5.value != "") {
+      form.story.value +="<meta name=\"keywords\" content=\"" +
+      form.input5.value + "\"/>\n";
+    }
+    if (form.input14.value != "") {
+      form.story.value +="<meta name=\"distribution\" content=\"" +
+      form.input14.options[form.input14.selectedIndex].value + "\"/>\n";
+    }
+    if (form.input15.value != "") {
+      form.story.value +="<meta name=\"robots\" content=\"" +
+      form.input15.options[form.input15.selectedIndex].value + "\"/>\n\n";
+    }
+    
+   if (form.input1.value != "") {
+      form.story.value +="<!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->\n\n";
+    }
+if (form.input1.value != "") {
+      form.story.value +="<meta property=\"og:site_name\" content=\"" +
+      form.input1.value + "\"/>\n";
+   }
+if (form.input10.value != "") {
+      form.story.value +="<meta property=\"og:site\" content=\"" +
+      form.input10.value + "\"/>\n";
+   }
+if (form.input1.value != "") {
+      form.story.value +="<meta property=\"og:title\" content=\"" +
+      form.input1.value + "\"/>\n";
+  }
+if (form.input4.value != "") {
+      form.story.value +="<meta property=\"og:description\" content=\"" +
+      form.input4.value + "\"/>\n";
+   }
+if (form.input11.value != "") {
+      form.story.value +="<meta property=\"og:image\" content=\"" +
+      form.input11.value + "\"/>\n";
+   }
+if (form.input1.value != "") {
+      form.story.value +="<meta expr:content=\"data:blog.url.canonical\" property=\"og:url" + "\"/>\n";
+   }
+if (form.input11.value != "") {
+      form.story.value +="<meta property=\"og:type\" content=\"artical"+ "\"/>\n";
+    }
+  }
+         
+}
+        
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+       
+ </script>
+ 
+<div class="form-group">
+
+    <label for="inputdefault" syle="font-size:18px"><b>Title:</b>  <small style="font-size:12px">(maximum length 60)</small></label>
+
+    <input class="form-control" id="inputdefault" name="input1" type="text"placeholder="Enter Title"/>
+
+  </div>
+      <div class="form-group">
+
+    <label for="inputdefault" style="font-size:18px"><b>Author:</b> <small style="font-size:12px">(Optional)</small></label>
+   
+ <input class="form-control" id="inputdefault" name="input2" type="text"placeholder="Enter Author Name"/>
+
+
+  </div>
+      
+          <div class="form-group">
+
+    <label for="inputdefault" style="font-size:18px" ><b>Description: </b><small style="font-size:12px">(Maximum length 150)</small> </label>
+
+    <input class="form-control" id="inputdefault" name="input4" type="text"placeholder="Enter Blogger Description"/>
+
+  </div>
+      <div class="form-group">
+
+    <label for="inputdefault" style="font-size:18px" ><b>Keywords:</b><small style="font-size:12px"> (e.g.Keyword, keyword 2.)</small></label>
+
+    <input class="form-control" id="inputdefault" name="input5" type="text"placeholder=" Enter Blogger Keywords"/>
+
+  </div>
+            <div class="form-group">
+
+    <label for="inputdefault" style="font-size:18px" ><b>Site URL:</b><small style="font-size:12px"> (For Social Seo)</small></label>
+
+    <input class="form-control" id="inputdefault" name="input10" type="text"placeholder=" Enter Blogger URL"/>
+
+  </div>
+      <div class="form-group">
+
+    <label for="inputdefault" style="font-size:18px" ><b>OG Image:</b><small style="font-size:12px"> (For Social Seo)</small></label>
+
+    <input class="form-control" id="inputdefault" name="input11" type="text"placeholder=" Enter Blogger image"/>
+
+  </div>
+            <div class="form-group">
+
+    <label for="exampleFormControlSelect1" style="font-size:18px" ><b>Distribution:</b></label>
+
+    <select class="form-control" id="exampleFormControlSelect1" name="input14">
+<option selected>Select..</option>
+  <option value="Global">Global</option>
+  <option value="Local">Local</option>
+  <option value="IU">Internal Use</option>
+
+
+    </select>
+
+  </div>
+       <div class="form-group">
+    <label for="exampleFormControlSelect1" style="font-size:18px"><b>Robots:</b></label>
+    <select class="form-control" id="exampleFormControlSelect1" name="input15"><option selected>Select..</option>
+  <option value="All">All</option>
+  <option value="None">None</option>
+  <option value="No Index">No Index</option>
+  <option value="Follow">Follow</option>
+  <option value="No Follow">No Follow</option>
+    </select>
+  </div>
             
+ <table> <tbody>   
+<input style="margin:8px;"class="btn btn-secondary  btn-sm" onclick="create(this.form)" type="button" value="Create META tags"/>
+   
+   <input class="btn btn-secondary  btn-sm" type="reset" value="Clear All"/>
+<br><br>
+<textarea class="form-control response" readonly rows="10" name="story" id="exampleFormControlTextarea1" wrap="wrap"></textarea>
+   <br/>
+<k type="button" class="btn btn-primary pull-left js-clipboard-tool-result" data-clipboard-target=".response" >Copy to Clipboard        </k>
 
-
-            <div class="mbr-col-md-12 mbr-col-sm-12 form-content mbr-col-lg-12">
-                <div class="form-wrap" data-form-type="formoid">
-                    <form class="mbr-form" method="post" target="_top" action-xhr="https://formoid.net/api/amp-form/push" data-form-title="Mobirise Form" id="myFormcontacts6p" on="submit:myFormcontacts6p.clear;submit-success:AMP.setState({myStatecontacts6p:{formdata11contacts6p:{stateformdata11contacts6p: '', valueformdata11contacts6p: ''}, formdata21contacts6p:{stateformdata21contacts6p: '', valueformdata21contacts6p: ''}, formdata01contacts6p:{stateformdata01contacts6p: '', valueformdata01contacts6p: ''}, formdata31contacts6p:{stateformdata31contacts6p: '', valueformdata31contacts6p: ''}}});submit-error:AMP.setState({myStatecontacts6p:{formdata11contacts6p:{stateformdata11contacts6p: myStatecontacts6p.formdata11contacts6p.valueformdata11contacts6p}, formdata21contacts6p:{stateformdata21contacts6p: myStatecontacts6p.formdata21contacts6p.valueformdata21contacts6p}, formdata01contacts6p:{stateformdata01contacts6p: myStatecontacts6p.formdata01contacts6p.valueformdata01contacts6p}, formdata31contacts6p:{stateformdata31contacts6p: myStatecontacts6p.formdata31contacts6p.valueformdata31contacts6p}}})"><amp-state id="myStatecontacts6p"><script type="application/json"> {"formdata11contacts6p":{ "stateformdata11contacts6p": "", "valueformdata11contacts6p": ""},"formdata21contacts6p":{ "stateformdata21contacts6p": "", "valueformdata21contacts6p": ""},"formdata01contacts6p":{ "stateformdata01contacts6p": "", "valueformdata01contacts6p": ""},"formdata31contacts6p":{ "stateformdata31contacts6p": "", "valueformdata31contacts6p": ""}}</script></amp-state><input type="hidden" name="email" data-form-email="true" value="tiI6+Ukftu4lwNadcMze0K5x+FMfQcDJQzGoa/mFMDgUK+6GDVOEsRk/2XQq3I+6Xkrlsv+X1ZaFd6g+nIVIAtzsrDNHfHCUp0TKLEjUW3f7w/eyUo/5DEk1/dCfspAp">
-                        <div class="mbr-form-row">
-                            <div submit-success="" class="mbr-col-sm-12 mbr-col-md-12">
-                                <template data-form-alert="" type="amp-mustache">Subscription successful!</template>
-                            </div>
-                            <div submit-error="" class="mbr-col-sm-12 mbr-col-md-12">
-                                <template data-form-alert="" type="amp-mustache">Failed! {{error}}</template>
-                            </div>
-                        </div>
-                        <div class="mbr-form-row" data-for="form[data][1][1]">
-                            <div class="field mbr-col-sm-12 mbr-col" data-for="form[data][1][1]">
-                                <input type="hidden" name="form[data][0][0]" value="Name" id="form[data][1][0]-contacts6-p" data-form-field="">
-                                <input [value]="myStatecontacts6p.formdata11contacts6p.stateformdata11contacts6p" on="change:AMP.setState({myStatecontacts6p:{formdata11contacts6p:{valueformdata11contacts6p: event.value}}})" class="field-input display-4" type="text" name="form[data][0][1]" data-form-field="Name" placeholder="Name" required="" id="form[data][1][1]-contacts6-p">
-                            </div>
-                            <div class="field mbr-col-sm-12 mbr-col" data-for="form[data][2][1]">
-                                <input type="hidden" name="form[data][1][0]" value="Phone" id="form[data][2][0]-contacts6-p" data-form-field="">
-                                <input [value]="myStatecontacts6p.formdata21contacts6p.stateformdata21contacts6p" on="change:AMP.setState({myStatecontacts6p:{formdata21contacts6p:{valueformdata21contacts6p: event.value}}})" class="field-input display-4" type="tel" name="form[data][1][1]" data-form-field="Phone" pattern="*" placeholder="Phone" required="" id="form[data][2][1]-contacts6-p">
-                            </div>
-                            <div class="field mbr-col-sm-12 mbr-col" data-for="form[data][0][1]">
-                                <input type="hidden" name="form[data][2][0]" value="Email" id="form[data][0][0]-contacts6-p" data-form-field="">
-                                <input [value]="myStatecontacts6p.formdata01contacts6p.stateformdata01contacts6p" on="change:AMP.setState({myStatecontacts6p:{formdata01contacts6p:{valueformdata01contacts6p: event.value}}})" class="field-input display-4" type="email" name="form[data][2][1]" data-form-field="Email" placeholder="Email" required="" id="form[data][0][1]-contacts6-p">
-                            </div>
-                            <div class="area field mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-12" data-for="form[data][3][1]">
-                                <input type="hidden" name="form[data][3][0]" value="Message" id="form[data][3][0]-contacts6-p" data-form-field="">
-                                <textarea on="change:AMP.setState({myStatecontacts6p:{formdata31contacts6p:{valueformdata31contacts6p: event.value}}})" [defaulttext]="myStatecontacts6p.formdata31contacts6p.stateformdata31contacts6p" class="field-input display-4" name="form[data][3][1]" rows="7" data-form-field="Message" placeholder="Message" id="form[data][3][1]-contacts6-p"></textarea>
-                            </div>
-                            <div class="mbr-section-btn mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-12 align-center">
-                                <button type="submit" class="btn btn-primary btn-form display-4">Send Form</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+          </tbody></table>
+<br><br><br>
+      
+        </form>
+    </div>
         </div>
     </div>
 </section>
