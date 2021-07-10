@@ -38,6 +38,13 @@ body{font-family: Inter;}blockquote{border-color: #ffdc00;}div[submit-success] >
    .mylabeltext {
      font-size:18px
    }
+   .mybtn
+   width:70px;
+   height:40px;
+   background-color:white;
+   border-style: solid;
+  border-color: #ffff00;
+   
   </style>
   </head>
 <body>
@@ -282,10 +289,12 @@ function closeNav() {
     </select>
   </div>
             
- <table> <tbody>   
-<input class="btn btn-primary" onclick="create(this.form)" type="button" value="Create META tags"/>
+ <table> <tbody> 
    
-   <input class="btn btn-primary" type="reset" value="Clear All"/>
+<br/>
+<input class="mybtn" onclick="create(this.form)" type="button" value="Create META tags"/>
+   
+   <input class="mybtn" type="reset" value="Clear All"/>
 <br><br>
 <textarea class="form-control response" readonly rows="10" name="story" id="exampleFormControlTextarea1" wrap="wrap"></textarea>
    <br/>
